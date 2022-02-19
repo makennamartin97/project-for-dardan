@@ -16,7 +16,7 @@ export default function FadeInSection(props) {
         // No need to keep observing:
         observer.unobserve(domRef.current);
       }
-    });
+    },[]);
 
     observer.observe(domRef.current);
 

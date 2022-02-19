@@ -1,18 +1,43 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
+import { Router, Link} from '@reach/router';
 import logo from '../images/logo.png';
 import close from '../images/close.png';
 import open from '../images/open.png';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
+
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    let listener = null
+    const [scrollState, setScrollState] = useState("top")
+  
+    useEffect(() => {
+      listener = document.addEventListener("scroll", e => {
+        var scrolled = document.scrollingElement.scrollTop
+        if (scrolled >= 120) {
+          if (scrollState !== "notTop") {
+            setScrollState("notTop")
+          }
+        } else {
+          if (scrollState !== "top") {
+            setScrollState("top")
+          }
+        }
+      })
+      return () => {
+        document.removeEventListener("scroll", listener)
+      }
+    }, [scrollState])
     
     
     return (
         <div className="parent">
-        <nav className="nav sticky">
+        <nav className="nav sticky" style={{
+          backgroundColor: scrollState === "top" ? "transparent" : "white",
+          opacity: scrollState === "top" ? "100%" : "90%"
+        }}>
             <div className="logo-nav">
             <div className="logo-container">
             <a href="/"><img src={logo} className="navlogo" alt="logo"/></a>
@@ -26,19 +51,19 @@ const Navbar = () => {
                     <a href="/">Home</a>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <a href="/#mission" >The Mission</a>
+                    <Link to="/mission">The Mission</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <a href="/#collection" >NFT Collection</a>
+                    <Link to="/nftcollection">NFT Collection</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <a href="/#submissions">Song Submissions</a>
+                    <Link to="/submissions">Song Submissions</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <a href="/#education">Web3 Education</a>
+                    <Link to="/education">Web3 Education</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <a href="/#team" >Meet The Team</a>
+                    <Link to="/team">Meet The Team</Link>
                 </li>
             </ul>
             </div>
@@ -49,9 +74,9 @@ const Navbar = () => {
           <img src={open} className="icon" />
         )}
       </div>
-        </nav>
+    </nav>
+    </div>
         
-        </div>
     )
 }
 

@@ -4,7 +4,8 @@ import nft from '../images/nft.jpeg';
 import FadeInSection from "./FadeInSection";
 import logo from '../images/logo.png';
 import musicnote from '../images/musical-note.png';
-
+import data from "./Data.json";
+import Count from './Count';
 
 const Home = () => {
     
@@ -15,7 +16,7 @@ const Home = () => {
             
         <div className="home" >
             <h2><span>NFT</span> Music Partnership</h2>
-            <video width="1300" className="video" autoPlay controls>
+            <video width="1024" className="video" autoPlay controls>
                 <source  src={video} type="video/mp4"></source>
             </video>
             
@@ -28,7 +29,7 @@ const Home = () => {
             <div className='row-section'>
                 <FadeInSection className="col-1">
                     <h4> We are holding a competition where we are accepting <span>5,000</span> song submissions.</h4>
-                    <h4>The best song submission wins a <span>$20,000</span> backing,</h4>
+                    <h4>The best song submission wins a <span>$20,000</span> backing</h4>
                 </FadeInSection>
                 <div className="col-2">
                 </div>

@@ -1,0 +1,31 @@
+import React,{useEffect} from 'react';
+import education from "./education.json";
+import FadeInSection from "./FadeInSection";
+import down from '../images/down-arrow.png';
+
+//showing account number and balance once connected to metamask
+const Education = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+  return (
+    <div className='section ed'>
+        <div id="idk">
+            <h1>Web3 Terminology</h1>
+            <img className='scroll-button' src={down}/>
+        </div>
+        {
+        education.terms.map((term, i)=>(
+            <FadeInSection>
+            <div className='term' key={i}>
+                <h2>{term.word}</h2>
+                <h3>{term.definition}</h3>
+            </div>
+            </FadeInSection>
+        ))
+        }
+      
+    </div>
+  );
+};
+export default Education;

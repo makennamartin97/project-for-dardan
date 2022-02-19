@@ -1,0 +1,91 @@
+{
+    "terms":[
+        {
+            "word":"Web 1.0",
+            "definition":"Web 1.0 was the first stage of the World Wide Web revolution, usually referred to as read-only web. Websites were informational and contained only static content that was hyperlinked together or in simple words there was no CSS, dynamic links, interactivity like logging in the users, comments on the blog posts etc."
+
+        },
+        {
+            "word":"Web 2.0",
+            "definition":"Web 2.0 is the second stage of the World Wide Web revolution, usually referred to as read-write web. Emphasis was given to user-generated content, ease of use, participatory culture and interoperability."
+
+        },
+        {
+            "word":"Web 3.0",
+            "definition":"The web3 concept aims to create a decentralized, but secure, internet in which people can securely exchange money and information, without the need for middlemen or big tech companies. Unlike Web 2.0 where data is stored in a single database or on a cloud provider, Web 3 applications either runs on blockchain, peer to peer nodes (servers)."
+
+        },
+        {
+            "word":"NFT's",
+            "definition":"A non-fungible token is a unique and non-interchangeable unit of data stored on a blockchain, a form of digital ledger. NFTs can be associated with reproducible digital files such as photos, videos, and audio"
+
+        },
+        {
+            "word":"Utility NFT's",
+            "definition":"Utility NFTs are NFTs with valuations based on the access, perks, and opportunities they provide to token holders. Utility NFTs are NFTs that offer clearly defined intrinsic value in addition to the usual scarcity associated with NFTs. An example of this for music artists would be giving free access to your concerts for your NFT holders"
+
+        },
+        {
+            "word":"Metaverse",
+            "definition":"A virtual 3D world where people can interact. Popular blockchain-based environments that comprise the metaverse include Decentraland and The Sandbox, virtual gaming worlds where users can buy and sell land as NFTs."
+
+        },
+        {
+            "word":"Smart Contract",
+            "definition":"A self-executing digital contract. NFTs are composed of code written in smart contract programming language like Solidity."
+
+        },
+        {
+            "word":"DAO",
+            "definition":"DAO stands for Decentralized Autonomous Organization. When you own an NFT from a project like Head DAO, you and all the other owners have voting rights and control over the future actions and overall direction of the project. Many NFT projects are setting up similar structures to become more community-driven and secure ongoing support."
+
+        },
+        {
+            "word":"Airdrop",
+            "definition":"When you receive an 'airdrop', you automatically get a certain amount of a specific cryptocurrency or a new NFT dropped into your wallet for free. It's long been a common practice in the general crypto space but has also become a popular way for NFT projects to reward their early adopters with new artworks, for instance."
+
+        },
+        {
+            "word":"Floor",
+            "definition":"The 'floor' or 'floor price' of a project is simply the lowest price at which you can buy an NFT from that project on the secondary market. It's the most popular metric for tracking a project's performance over time and its relative success compared to others."
+
+        },
+        {
+            "word":"Minting",
+            "definition":"The process by which an NFT becomes part of the blockchain. Once an asset is put on the blockchain, it is “minted” as a token and cannot be altered."
+
+        },
+
+        {
+            "word":"Gas",
+            "definition":"The price for making a transaction on a blockchain is called 'gas'. When buying NFTs on a blockchain like Solana, gas is negligible. Gas fees all depends on the activity on the network. Low activity, low fees. High activity, high fees."
+
+        },
+
+        {
+            "word":"Burn",
+            "definition":"To burn an NFT essentially means to destroy it. If only 5,000 NFTs are sold in a collection that was intended to consist of 10,000, for instance, the team may decide to 'burn' the remaining 5,000. Other projects let their owners 'burn' two NFTs to receive a new and more rare one."
+
+        },
+
+        {
+            "word":"OpenSea",
+            "definition":"Launched in 2018, OpenSea is the first and largest NFT marketplace, boasting four million assets and 135+ DApps."
+
+        },
+
+        {
+            "word":"ERC-721",
+            "definition":"A token standard that allows for the creation of unique, non-fungible tokens. It differs from ERC-20, for example, which is used to mint fungible tokens."
+
+        },
+
+        {
+            "word":"Royalties",
+            "definition":"Money earned by an NFT creator through the token's resale. Some NFTs automatically pay royalties each time an NFT is sold. An NFT can be hardcoded to pay an artist royalties forever, an interesting use case that has the potential to shake up the music industry."
+
+        }
+
+
+    ]
+}
