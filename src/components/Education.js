@@ -2,6 +2,7 @@ import React,{useEffect} from 'react';
 import education from "./education.json";
 import FadeInSection from "./FadeInSection";
 import down from '../images/down-arrow.png';
+import light from '../images/light.png';
 
 //showing account number and balance once connected to metamask
 const Education = () => {
@@ -12,7 +13,6 @@ const Education = () => {
     <div className='section ed'>
         <div id="idk">
             <h1>Web3 Terminology</h1>
-            <img className='scroll-button' src={down}/>
         </div>
         {
         education.terms.map((term, i)=>(

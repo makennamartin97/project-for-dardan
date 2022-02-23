@@ -63,7 +63,7 @@ const Navbar = (props) => {
                     <Link to="/education">Web3 Education</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <Link to="/team">Meet The Team</Link>
+                    <Link to="/1331team">Meet The Team</Link>
                 </li>
             </ul>
             </div>

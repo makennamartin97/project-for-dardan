@@ -22,7 +22,7 @@ const Main = () => {
                 <Submissions path="submissions"/>
                 <Education path="education"/>
                 <Mission path="mission"/>
-                <TheTeam path="team"/>
+                <TheTeam path="1331team"/>
                 <NFTCollection path="nftcollection"/>
             </Router>
             <Footer/>
