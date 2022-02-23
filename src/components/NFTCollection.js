@@ -15,6 +15,7 @@ const NFTCollection = () => {
         <div className="row">
           <div id="collection">
             <img src={gif} alt="nfts" className='gif'/>
+            {/* or MINT if connected */}
             <button className='btn3'>CONNECT WALLET</button>
           </div>
           <div id="desc">
@@ -24,11 +25,6 @@ const NFTCollection = () => {
             </FadeInSection>
           </div>
         </div>
-        {/* <div id='part2'>
-          <FadeInSection>
-          <h3>1331 Recordz token holders will have access to our elite teams Network, IRL Events, Metaverse Events, Limited Edition Merchandise, and Commercial rights to your NFT. </h3>
-          </FadeInSection>
-        </div> */}
         <h1 id="access">1331 RECORDZ TOKEN HOLDERS WILL HAVE ACCESS TO:</h1>
         <div className='boxes'>
         <div className='row2'>

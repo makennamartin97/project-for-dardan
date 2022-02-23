@@ -10,6 +10,7 @@ import logo from '../images/logo.png';
 import musicnote from '../images/musical-note.png';
 import data from "./Data.json";
 import Count from './Count';
+import music from '../images/musical-note.png';
 
 const Home = () => {
     
@@ -38,19 +39,21 @@ const Home = () => {
                 </FadeInSection >
             </div>
             <div className='col-section'>
+                <FadeInSection>
                 <h4>The winner will receive all of the following:</h4>
                     <ul>
-                    <FadeInSection>
-                        <li><span>$20k</span> Backing Towards The Artist NFT Music Release</li>
-                        <li><span>1,000 Collection</span> NFT Music Release</li>
-                        <li><span>Studio Time</span></li>
-                        <li>Professional <span>Music Video</span></li>
-                        <li><span>Music Production</span></li>
-                        <li><span>Artist Development</span></li>
-                        <li><span>Web3 Music Education</span> Towards Artists Future Success</li>
-                        <li><span>FREE NFT</span> From The 1331 Recordz NFT Collection</li>
-                    </FadeInSection>
+                   
+                        <li><img src={music} className="music" alt="music"/><span>$20,000</span> Backing Towards The Artist NFT Music Release</li>
+                        <li><img src={music} className="music" alt="music"/><span>1,000 Collection</span> NFT Music Release</li>
+                        <li><img src={music} className="music" alt="music"/><span>Studio Time</span></li>
+                        <li><img src={music} className="music" alt="music"/><span>Professional Music Video</span></li>
+                        <li><img src={music} className="music" alt="music"/><span>Music Production</span></li>
+                        <li><img src={music} className="music" alt="music"/><span>Artist Development</span></li>
+                        <li><img src={music} className="music" alt="music"/><span>Web3 Music Education</span> Towards Artists Future Success</li>
+                        <li><img src={music} className="music" alt="music"/><span>FREE NFT</span> From The 1331 Recordz NFT Collection</li>
+                
                     </ul>
+                    </FadeInSection>
                 
             </div>
             <div className='row'>

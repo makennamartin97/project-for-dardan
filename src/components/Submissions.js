@@ -1,7 +1,7 @@
 import React,{useEffect, useState, useRef} from 'react';
 import FadeInSection from "./FadeInSection";
 import bluenft from '../images/bluenft.png';
-//import emailjs from 'emailjs-com';
+import music from '../images/musical-note.png';
 import emailjs from 'emailjs-com';
 import{ init } from '@emailjs/browser';
 init("user_ID6B2OkYLqb5RgvrCJttE");
@@ -15,16 +15,30 @@ init("user_ID6B2OkYLqb5RgvrCJttE");
 // });
 
 const Submissions = () => {
+  const [hasError, setError] = useState(false);
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_hwur08h', 'template_iuhm5el', form.current, 'user_ID6B2OkYLqb5RgvrCJttE')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
+        .then((result) => {
+        console.log(result.text);
+        alert("Thank you for submitting!")
+        
+        }, (error) => {
           console.log(error.text);
+          alert("There is an error with your submission.")
       });
+        
+    e.target.reset();
+    
+
+    // emailjs.sendForm('service_hwur08h', 'template_iuhm5el', form.current, 'user_ID6B2OkYLqb5RgvrCJttE')
+    //   .then((result) => {
+    //       console.log(result.text);
+    //   }, (error) => {
+    //       console.log(error.text);
+    //   });
   };
 
   // const [sent, setSent] = useState(false);
@@ -39,34 +53,36 @@ const Submissions = () => {
   //   solAddress: '',
   //   selectedFile: null
   // });
-//   const handleFileChange = (e) =>{
 
-//    //toBase64(files[0]).then(dataUri => {
-//       //setToSend(toSend => ({...toSend, [selectedFile]: dataUri}))
-//       setToSend({ ...toSend, selectedFile: e.target.files[0]});
-//  }
 
     // const handleValidation=()=>{
-    //       //   let fields = {name, email, solAddress, selectedFile};
-    //       //   let errors = {};
-    //       //   let formIsValid = true;
+    //   if (name.trim() === '') {
+    //     setError(true);
+    //     return false;
+    //   }
+    //   if (solAddress.length < 44 || solAddress.length > 44) {
+    //     setError(true);
+    //     return;
+    //   }
+    //   setError(false);
+    //   return true
+          //   let fields = {name, email, solAddress, selectedFile};
+          //   let errors = {};
+          //   let formIsValid = true;
 
-    //       //   //Name
-    //       //   if(!fields["name"]){
-    //       //      formIsValid = false;
-    //       //      errors["name"] = "Cannot be empty";
-    //       //   }
-    //       //   if(!fields["email"]){
-    //       //       formIsValid = false;
-    //       //       errors["email"] = "Cannot be empty";
-    //       //    }
-    //       //    setErrors(errors)
-    //       //  return formIsValid;
-    // }
-    // function formSubmit() {
-    //   e.preventDefault();
-    //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this);
-    // }
+          //   //Name
+          //   if(!fields["name"]){
+          //      formIsValid = false;
+          //      errors["name"] = "Cannot be empty";
+          //   }
+          //   if(!fields["email"]){
+          //       formIsValid = false;
+          //       errors["email"] = "Cannot be empty";
+          //    }
+          //    setErrors(errors)
+          //  return formIsValid;
+    //}
+
  
 
     // const handleChange = (e) => {
@@ -131,14 +147,14 @@ const Submissions = () => {
           </div>
           <form encType="multipart/form-data" ref={form} onSubmit={sendEmail}>
             <ul>
-              <li>All song submissions are free</li>
-              <li>Deadline is 7/31/22 or when we reach 5,000 submissions</li>
-              <li>Every song submission requires a Phantom Wallet address</li>
+              <li><img src={music} className="music" alt="music"/>All song submissions are free</li>
+              <li><img src={music} className="music" alt="music"/>Deadline is 7/31/22 or when we reach 5,000 submissions</li>
+              <li><img src={music} className="music" alt="music"/>Every song submission requires a Phantom Wallet address</li>
             </ul>
             <input type="text" placeholder='Name' name="name" required />
-            <input type="email" placeholder='Email' name="email"  />
+            <input type="email" placeholder='Email' name="email" />
             <input type="text" placeholder='Solana Address' name="solAddress" required />
-            <input type = "file" placeholder='Upload Song' name="my_file" required />
+            <input type="file" placeholder='Upload Song' name="my_file" accept=".mp3" required/>
             <button className='btn'>Submit</button>
 
           </form>
