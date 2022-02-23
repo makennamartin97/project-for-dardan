@@ -7,11 +7,14 @@ import nft3 from '../images/nft3.jpeg';
 import nft4 from '../images/nft4.jpeg';
 import nft5 from '../images/nft5.jpeg';
 
-//showing account number and balance once connected to metamask
+
+
 const Mission = () => {
+
   useEffect(()=>{
     window.scrollTo(0, 0)
 },[])
+
   return (
     <div className='section'id="mission">
         <h1>The Mission</h1>

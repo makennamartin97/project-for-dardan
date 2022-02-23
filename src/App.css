@@ -60,11 +60,7 @@
   animation: Gradient 5s ease infinite!important;
 }
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-@font-face{
-  font-family: 'ano2light';
-  src:url('ano2lightcopy2.otf')
 
-}
 @font-face{
   font-family: 'druk';
   src:url('Druk\ Wide\ Bold.ttf')
@@ -139,7 +135,6 @@
   color: #333333;
   height: 70vh;
   width: 100vw;
-  border: 20px solid #00A36C;
   display: flex;
   align-items: center;
 }
@@ -180,6 +175,10 @@
   color:#333333;
   display: flex;
   align-items: center;
+}
+.halfimg img{
+  width: 25vw;
+  height: auto;
 }
 
 .section{
@@ -783,7 +782,7 @@ input{
   li a{
     color:white;
     text-decoration: none;
-    font-family: 'ano2light';
+    font-family: 'League Spartan';
     font-weight: 800;
   
   }
@@ -809,7 +808,7 @@ input{
   }
 
   .part2{
-    border: 10px solid #00A36C;
+    height:auto;
   }
   .part2 h3{
     font-size: 18px;
@@ -842,6 +841,14 @@ input{
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .halfimg img{
+    width: 50vw;
+    height: auto;
+  }
+  .part2 h4 {
+
+    padding: 20px;
+}
   #mission h2{
     font-size: 15px;
     line-height: 30px;

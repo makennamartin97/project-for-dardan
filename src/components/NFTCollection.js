@@ -1,15 +1,15 @@
 import React,{useEffect} from 'react';
 import gif from '../images/1331.gif';
-import team from '../images/team.png';
-import paper from '../images/paper.png';
-import community from '../images/community.png';
 import FadeInSection from "./FadeInSection";
 
-//showing account number and balance once connected to metamask
+
+
 const NFTCollection = () => {
   useEffect(()=>{
     window.scrollTo(0, 0)
 },[])
+
+
   return (
     <div className='section nft'>
         <div className="row">

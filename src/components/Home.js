@@ -1,15 +1,12 @@
 import React from 'react';
 import { Link} from '@reach/router';
 import video from '../images/croppedvideo.mp4';
-import nft from '../images/nft.jpeg';
+import nft2 from '../images/nft2.jpeg';
 import phantom from '../images/phantom.jpg';
 import la from '../images/la.jpg';
 import studio from '../images/studio.jpg';
 import FadeInSection from "./FadeInSection";
 import logo from '../images/logo.png';
-import musicnote from '../images/musical-note.png';
-import data from "./Data.json";
-import Count from './Count';
 import music from '../images/musical-note.png';
 
 const Home = () => {
@@ -31,12 +28,14 @@ const Home = () => {
                 </FadeInSection>
                 <img src={logo} alt="logo"></img>
             </div>
-            <div className='part2'>
+            <div className='part2 row'>
                 <FadeInSection>
                     <h3> We are holding a competition where we are accepting <span>5,000</span> song submissions.</h3>
                     <h4>The best song submission wins a <span>$20,000</span> backing which includes a <span>1,000 NFT music collection release</span> where the artist keeps <span>95%</span> of everything made, and owns <span>100%</span> of their IP/Masters. They also receive marketing, song production, a music video and NFT development.</h4>
-
                 </FadeInSection >
+                <div className='halfimg'>
+                    <img src={nft2} alt="nft"/>
+                </div>
             </div>
             <div className='col-section'>
                 <FadeInSection>

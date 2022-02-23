@@ -1,10 +1,8 @@
 import React,{useEffect} from 'react';
 import education from "./education.json";
 import FadeInSection from "./FadeInSection";
-import down from '../images/down-arrow.png';
-import light from '../images/light.png';
 
-//showing account number and balance once connected to metamask
+
 const Education = () => {
     useEffect(()=>{
         window.scrollTo(0, 0)
