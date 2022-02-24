@@ -40,7 +40,7 @@ const Navbar = (props) => {
         }}>
             <div className="logo-nav">
             <div className="logo-container">
-            <a href="#"><img src={logo} className="navlogo" alt="logo"/></a>
+            <a href="/"><img src={logo} className="navlogo" alt="logo"/></a>
             </div>
 
             
@@ -48,7 +48,7 @@ const Navbar = (props) => {
             <ul className={click ? "nav-options active" : "nav-options"}>
                 
                 <li className="option" onClick={closeMobileMenu}>
-                  <Link to="/">Home</Link>
+                  <Link to="project-for-dardan">Home</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
                     <Link to="project-for-dardan/mission">The Mission</Link>
