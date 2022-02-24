@@ -48,7 +48,7 @@ const Navbar = (props) => {
             <ul className={click ? "nav-options active" : "nav-options"}>
                 
                 <li className="option" onClick={closeMobileMenu}>
-                  <a href="project-for-dardan/">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
                     <Link to="project-for-dardan/mission">The Mission</Link>
