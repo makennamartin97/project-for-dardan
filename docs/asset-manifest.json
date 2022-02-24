@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project-for-dardan/static/css/main.588fbf1a.css",
-    "main.js": "/project-for-dardan/static/js/main.9f5944dd.js",
+    "main.js": "/project-for-dardan/static/js/main.47d1aaa4.js",
     "static/js/787.b45e72ff.chunk.js": "/project-for-dardan/static/js/787.b45e72ff.chunk.js",
     "static/media/croppedvideo.mp4": "/project-for-dardan/static/media/croppedvideo.4a92055c8ab359752cf8.mp4",
     "static/media/green.jpg": "/project-for-dardan/static/media/green.5f3fcbc8c752cf9af7ad.jpg",
@@ -31,11 +31,11 @@
     "index.html": "/project-for-dardan/index.html",
     "static/media/twitter.svg": "/project-for-dardan/static/media/twitter.af8d0c30eeb64b332a38d6a5598c9a24.svg",
     "main.588fbf1a.css.map": "/project-for-dardan/static/css/main.588fbf1a.css.map",
-    "main.9f5944dd.js.map": "/project-for-dardan/static/js/main.9f5944dd.js.map",
+    "main.47d1aaa4.js.map": "/project-for-dardan/static/js/main.47d1aaa4.js.map",
     "787.b45e72ff.chunk.js.map": "/project-for-dardan/static/js/787.b45e72ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.588fbf1a.css",
-    "static/js/main.9f5944dd.js"
+    "static/js/main.47d1aaa4.js"
   ]
 }
