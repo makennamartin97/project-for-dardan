@@ -18,7 +18,7 @@ const Main = () => {
         <div className="main">
             <Navbar />
             <Router>
-                <Home path="/"/>
+                <Home path="project-for-dardan/"/>
                 <Submissions path="project-for-dardan/submissions"/>
                 <Education path="project-for-dardan/education"/>
                 <Mission path="project-for-dardan/mission"/>
