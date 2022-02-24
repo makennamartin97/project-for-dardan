@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import Loading from './components/Loading';
 import Main from './components/Main';
-import terms from "./components/education.json";
 
 
 function App() {

@@ -48,22 +48,22 @@ const Navbar = (props) => {
             <ul className={click ? "nav-options active" : "nav-options"}>
                 
                 <li className="option" onClick={closeMobileMenu}>
-                    <a href="/">Home</a>
+                  <a href="project-for-dardan/">Home</a>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <Link to="/mission">The Mission</Link>
+                    <Link to="project-for-dardan/mission">The Mission</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <Link to="/nftcollection">NFT Collection</Link>
+                    <Link to="project-for-dardan/nftcollection">NFT Collection</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <Link to="/submissions">Song Submissions</Link>
+                    <Link to="project-for-dardan/submissions">Song Submissions</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <Link to="/education">Web3 Education</Link>
+                    <Link to="project-for-dardan/education">Web3 Education</Link>
                 </li>
                 <li className="option" onClick={closeMobileMenu}>
-                    <Link to="/1331team">Meet The Team</Link>
+                    <Link to="project-for-dardan/1331team">Meet The Team</Link>
                 </li>
             </ul>
             </div>

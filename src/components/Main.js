@@ -18,12 +18,12 @@ const Main = () => {
         <div className="main">
             <Navbar />
             <Router>
-                <Home path="/"/>
-                <Submissions path="submissions"/>
-                <Education path="education"/>
-                <Mission path="mission"/>
-                <TheTeam path="1331team"/>
-                <NFTCollection path="nftcollection"/>
+                <Home path="project-for-dardan/"/>
+                <Submissions path="project-for-dardan/submissions"/>
+                <Education path="project-for-dardan/education"/>
+                <Mission path="project-for-dardan/mission"/>
+                <TheTeam path="project-for-dardan/1331team"/>
+                <NFTCollection path="project-for-dardan/nftcollection"/>
             </Router>
             <Footer/>
         </div>
